@@ -82,3 +82,7 @@ IoT 网关、断点续传、能源平衡、峰谷策略、需量控制、分摊�
 | ![微信二维码 1](docs/images/zhuatech-wechat-consulting.png) | ![微信二维码 2](docs/images/zhuatech-wechat-consulting-2.png) |
 
 SEO：EMS 开源、能源管理系统源码、能耗监测平台、碳管理系统、双碳平台、园区能源管理、Java EMS、Vue EMS、知华科技、上海如静知华信息科技有限公司。
+
+## 生产归一化能耗异常
+
+`POST /api/ems/energy-anomaly` 会按产量变化修正能耗基线，计算超额电量、偏差率、额外成本和碳排放。超过阈值的异常自动分为 `ALERT` 或 `CRITICAL`，并提示设备与时段下钻分析。

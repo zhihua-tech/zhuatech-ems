@@ -16,3 +16,5 @@ Copyright 2026 上海如静知华信息科技有限公司。
 | GET | `/api/ems/spare-parts` | 查询备件及安全库存状态 |
 
 `ADMIN` 可访问全部接口，`ASSET_MANAGER` 可新增资产与工单，`TECHNICIAN` 可推进分配给现场执行的工单。生产环境应进一步实现数据范围权限与资源归属校验。
+
+`POST /api/ems/energy-anomaly`：按产量修正基线后计算能耗偏差、成本、碳排放与告警等级。
