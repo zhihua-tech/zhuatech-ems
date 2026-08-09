@@ -86,3 +86,7 @@ SEO：EMS 开源、能源管理系统源码、能耗监测平台、碳管理系�
 ## 生产归一化能耗异常
 
 `POST /api/ems/energy-anomaly` 会按产量变化修正能耗基线，计算超额电量、偏差率、额外成本和碳排放。超过阈值的异常自动分为 `ALERT` 或 `CRITICAL`，并提示设备与时段下钻分析。
+
+## 最大需量控制
+
+新增 `POST /api/ems/insights/peak-demand-guard`，结合当前需量、预测新增负荷、可错峰负荷、储能放电和合同需量，输出 `NORMAL / WATCH / SHED_LOAD`，量化超限功率及可避免的需量费用，并生成削峰动作。
