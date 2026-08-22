@@ -1,4 +1,4 @@
-<!-- Copyright 2026 上海如静知华信息科技有限公司 -->
+<!-- Copyright 2026 上海如静知华信息科技有限公司 · https://www.zhuatech.cn/ -->
 <script setup>import AdminShell from '../../components/AdminShell.vue';import StatusBadge from '../../components/StatusBadge.vue';import {assets,workOrders,plans} from '../../api/mock';</script>
 <template><AdminShell><template #title>能源驾驶舱</template>
  <div class="heading"><div><p>ENERGY & CARBON OVERVIEW</p><h1>能源运营驾驶舱</h1><span>聚合计量设备健康、节能任务负荷与运行成本，聚焦今日需要处理的事项</span></div><div><button class="btn ghost">下载晨会简报</button><button class="btn primary">＋ 新增计量点</button></div></div>

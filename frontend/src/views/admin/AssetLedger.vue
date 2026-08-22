@@ -1,4 +1,4 @@
-<!-- Copyright 2026 上海如静知华信息科技有限公司 -->
+<!-- Copyright 2026 上海如静知华信息科技有限公司 · https://www.zhuatech.cn/ -->
 <script setup>import AdminShell from '../../components/AdminShell.vue';import StatusBadge from '../../components/StatusBadge.vue';import {assets,spareParts} from '../../api/mock';</script>
 <template><AdminShell><template #title>计量点台账</template><div class="heading"><div><p>METERING POINTS</p><h1>计量点台账</h1><span>统一管理计量点、能源介质、区域归属、采集状态与计量口径</span></div><div><button class="btn ghost">导入台账</button><button class="btn primary">＋ 新建计量点</button></div></div>
  <section class="asset-summary"><div><small>资产分类</small><b>生产计量设备 / 动力计量设备 / 物流计量设备</b></div><div><small>当前组织</small><b>知华智造一号工厂</b></div><div><small>本月新增</small><b>18 台 / 套</b></div><div><small>盘点进度</small><b>82.6%</b></div></section>

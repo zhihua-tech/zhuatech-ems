@@ -1,4 +1,4 @@
-/* Copyright 2026 上海如静知华信息科技有限公司 */
+/* Copyright 2026 上海如静知华信息科技有限公司 · https://www.zhuatech.cn/ */
 export const assets=[
  {code:'MTR-EL-018',name:'一号车间总进线电表',category:'电力计量',location:'一号工厂 · 高压配电室',custodian:'许亦',health:'在线',status:'采集中',utilization:87,value:'18,642 kWh'},
  {code:'MTR-AC-006',name:'中央空调冷量计',category:'暖通计量',location:'一号工厂 · 屋顶机房',custodian:'陈序',health:'需关注',status:'采集中',utilization:93,value:'3,860 kWh'},

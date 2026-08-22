@@ -1,4 +1,4 @@
-<!-- Copyright 2026 上海如静知华信息科技有限公司 -->
+<!-- Copyright 2026 上海如静知华信息科技有限公司 · https://www.zhuatech.cn/ -->
 <script setup>
 const groups=[
  {label:'能源运营',items:[['/admin/dashboard','能源驾驶舱','⌂'],['/admin/assets','计量点台账','▱'],['/admin/analytics','能耗分析','⌁']]},

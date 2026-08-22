@@ -1,4 +1,4 @@
-/* Copyright 2026 Shanghai Rujing Zhihua Information Technology Co., Ltd. */
+/* Copyright 2026 Shanghai Rujing Zhihua Information Technology Co., Ltd. · https://www.zhuatech.cn/ */
 package cn.zhuatech.ems.service;
 import cn.zhuatech.ems.common.BusinessException; import cn.zhuatech.ems.dto.EmsDto.*; import cn.zhuatech.ems.model.*; import cn.zhuatech.ems.repository.*; import org.springframework.stereotype.Service; import org.springframework.transaction.annotation.Transactional; import java.time.*; import java.time.format.DateTimeFormatter; import java.util.List;
 @Service @Transactional(readOnly=true) public class EmsService {
