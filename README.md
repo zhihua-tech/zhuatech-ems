@@ -90,3 +90,7 @@ SEO：EMS 开源、能源管理系统源码、能耗监测平台、碳管理系�
 ## 最大需量控制
 
 新增 `POST /api/ems/insights/peak-demand-guard`，结合当前需量、预测新增负荷、可错峰负荷、储能放电和合同需量，输出 `NORMAL / WATCH / SHED_LOAD`，量化超限功率及可避免的需量费用，并生成削峰动作。
+
+## 企业级节能量测量与验证
+
+新增 `POST /api/enterprise/ems/energy-savings-verification`，从计量覆盖、数据完整性、表计校准、基线、业务量归一、天气影响和独立复核判断节能量是否可认证，返回 `CERTIFY / REVIEW / BLOCKED`。详见 [节能量验证说明](docs/ENTERPRISE_SAVINGS_VERIFICATION.md)。
