@@ -10,8 +10,14 @@ import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+ */
 @Service
 public class PeakDemandGuardService {
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public Result evaluate(Request request) {
         BigDecimal projectedDemand = request.currentDemandKw().add(request.forecastAdditionalKw())
             .subtract(request.flexibleLoadKw()).subtract(request.batteryDischargeKw())
@@ -33,6 +39,9 @@ public class PeakDemandGuardService {
             avoidableDemandCharge, decision, actions);
     }
 
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public record Request(@NotBlank String siteCode,
                           @DecimalMin("0.01") BigDecimal contractedDemandKw,
                           @DecimalMin("0") BigDecimal currentDemandKw,
@@ -41,6 +50,9 @@ public class PeakDemandGuardService {
                           @DecimalMin("0") BigDecimal batteryDischargeKw,
                           @DecimalMin("0") BigDecimal peakTariffPerKw) {}
 
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public record Result(String siteCode, BigDecimal projectedDemandKw,
                          BigDecimal contractedUtilization, BigDecimal exceedDemandKw,
                          BigDecimal avoidableDemandCharge, String decision,

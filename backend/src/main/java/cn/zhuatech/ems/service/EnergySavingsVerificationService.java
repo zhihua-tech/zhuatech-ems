@@ -8,8 +8,14 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+ */
 @Service
 public class EnergySavingsVerificationService {
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public Assessment assess(Request request) {
         List<String> blockers = new ArrayList<>();
         List<String> actions = new ArrayList<>();
@@ -31,12 +37,21 @@ public class EnergySavingsVerificationService {
         return new Assessment(Decision.CERTIFY, true, blockers, actions);
     }
 
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public record Request(@NotBlank String projectCode, @Min(0) @Max(100) int meteringCoveragePercent,
                           @Min(0) @Max(100) int dataCompletenessPercent,
                           boolean metersCalibrated, @Min(1) int baselineDays,
                           boolean productionNormalized, boolean weatherAdjusted,
                           boolean independentReviewerApproved) {}
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public record Assessment(Decision decision, boolean certified, List<String> blockers,
                              List<String> actions) {}
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public enum Decision { CERTIFY, REVIEW, BLOCKED }
 }

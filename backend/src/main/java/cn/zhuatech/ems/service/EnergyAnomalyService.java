@@ -11,8 +11,14 @@ import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+ */
 @Service
 public class EnergyAnomalyService {
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public Result analyze(Request request) {
         BigDecimal expected = request.baselineKwh().multiply(BigDecimal.ONE.add(
             BigDecimal.valueOf(request.productionChangePercent()).divide(BigDecimal.valueOf(100), 4, RoundingMode.HALF_UP)));
@@ -30,6 +36,9 @@ public class EnergyAnomalyService {
             excess.multiply(request.carbonFactor()).setScale(2, RoundingMode.HALF_UP), status, actions);
     }
 
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public record Request(@NotBlank String meterName,
                           @DecimalMin("0") BigDecimal currentKwh,
                           @DecimalMin("0") BigDecimal baselineKwh,
@@ -37,6 +46,9 @@ public class EnergyAnomalyService {
                           @DecimalMin("0") BigDecimal tariff,
                           @DecimalMin("0") BigDecimal carbonFactor,
                           @Positive double alertThresholdPercent) {}
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public record Result(String meterName, BigDecimal expectedKwh, BigDecimal excessKwh,
                          BigDecimal deviationPercent, BigDecimal excessCost,
                          BigDecimal excessCarbonKg, String status, List<String> actions) {}
